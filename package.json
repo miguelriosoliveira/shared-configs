@@ -1,0 +1,10 @@
+{
+	"name": "@miguelriosoliveira/shared-configs",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Shared project configs (Biome, Renovate, and more)",
+	"license": "MIT",
+	"exports": {
+		"./biome": "./biome/biome.json"
+	}
+}
