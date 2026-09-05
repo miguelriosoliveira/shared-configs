@@ -1,0 +1,15 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": "Weekly grouped updates for npm, GitHub Actions, Docker, and Compose. Node image tags use LTS-aware versioning.",
+	"extends": [
+		"config:recommended",
+		":preserveSemverRanges",
+		"customManagers:dockerfileVersions",
+		"workarounds:nodeDockerVersioning",
+		"group:all",
+		"schedule:weekly"
+	],
+	"enabledManagers": ["npm", "github-actions", "dockerfile", "docker-compose", "custom.regex"],
+	"separateMajorMinor": false,
+	"labels": ["dependencies"]
+}
