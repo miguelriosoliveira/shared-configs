@@ -36,11 +36,10 @@ Same GitHub dependency. Extend a flavor and keep `include`, `paths`, and plugins
 
 | Flavor | For |
 | --- | --- |
-| `@miguelriosoliveira/shared-configs/tsconfig/base` | Shared compiler policy |
-| `@miguelriosoliveira/shared-configs/tsconfig/react` | Vite / SPA React |
-| `@miguelriosoliveira/shared-configs/tsconfig/next` | Next.js |
-| `@miguelriosoliveira/shared-configs/tsconfig/node` | Node (tsx / tsup) |
-| `@miguelriosoliveira/shared-configs/tsconfig/vite` | `vite.config.ts` project references |
+| `@miguelriosoliveira/shared-configs/tsconfig/react` | Browsers (Vite, Next, SPA) |
+| `@miguelriosoliveira/shared-configs/tsconfig/node` | Servers and Node config files |
+
+Next.js and `vite.config.ts` add their extra flags in the project file.
 
 ```json
 {
