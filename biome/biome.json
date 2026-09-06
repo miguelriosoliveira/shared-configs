@@ -7,14 +7,35 @@
 	"files": {
 		"ignoreUnknown": true
 	},
-	"css": {
-		"parser": {
-			"tailwindDirectives": true
+	"linter": {
+		"rules": {
+			"style": {
+				"useNodejsImportProtocol": {
+					"level": "on",
+					"fix": "safe"
+				},
+				"useTemplate": {
+					"level": "on",
+					"fix": "safe"
+				}
+			}
 		}
 	},
 	"formatter": {
 		"lineWidth": 100,
 		"useEditorconfig": true
+	},
+	"html": {
+		"formatter": {
+			"enabled": true,
+			"indentScriptAndStyle": true,
+			"selfCloseVoidElements": "always"
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
 	},
 	"javascript": {
 		"formatter": {
