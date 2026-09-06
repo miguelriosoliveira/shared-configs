@@ -5,7 +5,6 @@
 		"composite": true,
 		"module": "preserve",
 		"moduleResolution": "bundler",
-		"allowSyntheticDefaultImports": true,
-		"noEmit": true
+		"allowSyntheticDefaultImports": true
 	}
 }
