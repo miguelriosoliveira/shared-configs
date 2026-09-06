@@ -29,3 +29,22 @@ Install this repo as a GitHub dependency, then extend the package export:
 	"extends": ["@miguelriosoliveira/shared-configs/biome"]
 }
 ```
+
+## TypeScript
+
+Same GitHub dependency. Extend a flavor and keep `include`, `paths`, and plugins in the app:
+
+| Flavor | For |
+| --- | --- |
+| `@miguelriosoliveira/shared-configs/tsconfig/base` | Shared compiler policy |
+| `@miguelriosoliveira/shared-configs/tsconfig/react` | Vite / SPA React |
+| `@miguelriosoliveira/shared-configs/tsconfig/next` | Next.js |
+| `@miguelriosoliveira/shared-configs/tsconfig/node` | Node (tsx / tsup) |
+| `@miguelriosoliveira/shared-configs/tsconfig/vite` | `vite.config.ts` project references |
+
+```json
+{
+	"extends": "@miguelriosoliveira/shared-configs/tsconfig/react",
+	"include": ["src"]
+}
+```

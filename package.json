@@ -5,6 +5,11 @@
 	"description": "Shared project configs (Biome, Renovate, and more)",
 	"license": "MIT",
 	"exports": {
-		"./biome": "./biome/biome.json"
+		"./biome": "./biome/biome.json",
+		"./tsconfig/base": "./tsconfig/base.json",
+		"./tsconfig/react": "./tsconfig/react.json",
+		"./tsconfig/next": "./tsconfig/next.json",
+		"./tsconfig/node": "./tsconfig/node.json",
+		"./tsconfig/vite": "./tsconfig/vite.json"
 	}
 }
