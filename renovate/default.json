@@ -11,5 +11,12 @@
 	],
 	"enabledManagers": ["npm", "nvm", "github-actions", "dockerfile", "docker-compose", "custom.regex"],
 	"separateMajorMinor": false,
-	"labels": ["dependencies"]
+	"labels": ["dependencies"],
+	"packageRules": [
+		{
+			"description": "Wait 1 day before npm updates so they clear pnpm's minimumReleaseAge. The default 30-minute buffer covers companion packages published shortly after the main package.",
+			"matchDatasources": ["npm"],
+			"minimumReleaseAge": "1 day"
+		}
+	]
 }
