@@ -43,5 +43,10 @@
 			"quoteStyle": "single",
 			"arrowParentheses": "asNeeded"
 		}
+	},
+	"yaml": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
 	}
 }
